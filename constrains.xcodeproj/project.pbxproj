@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		82C4890C2CC5F17A0017F54A /* constrainsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C4890B2CC5F17A0017F54A /* constrainsVC.xib */; };
+		82C4890D2CC5F17A0017F54A /* constrainsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C489062CC5F17A0017F54A /* constrainsInteractor.swift */; };
+		82C4890E2CC5F17A0017F54A /* constrainsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C489072CC5F17A0017F54A /* constrainsPresenter.swift */; };
+		82C4890F2CC5F17A0017F54A /* constrainsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C489082CC5F17A0017F54A /* constrainsProtocol.swift */; };
+		82C489102CC5F17A0017F54A /* constrainsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C489092CC5F17A0017F54A /* constrainsRouter.swift */; };
+		82C489112CC5F17A0017F54A /* constrainsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4890A2CC5F17A0017F54A /* constrainsVC.swift */; };
+		82C489132CC5F2FF0017F54A /* InstructionStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C489122CC5F2FF0017F54A /* InstructionStepView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		82C488E82CC5F1410017F54A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,13 @@
 		82C488CE2CC5F13F0017F54A /* constrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = constrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C488E72CC5F1410017F54A /* constrainsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = constrainsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C488F12CC5F1410017F54A /* constrainsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = constrainsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C489062CC5F17A0017F54A /* constrainsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constrainsInteractor.swift; sourceTree = "<group>"; };
+		82C489072CC5F17A0017F54A /* constrainsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constrainsPresenter.swift; sourceTree = "<group>"; };
+		82C489082CC5F17A0017F54A /* constrainsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constrainsProtocol.swift; sourceTree = "<group>"; };
+		82C489092CC5F17A0017F54A /* constrainsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constrainsRouter.swift; sourceTree = "<group>"; };
+		82C4890A2CC5F17A0017F54A /* constrainsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constrainsVC.swift; sourceTree = "<group>"; };
+		82C4890B2CC5F17A0017F54A /* constrainsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = constrainsVC.xib; sourceTree = "<group>"; };
+		82C489122CC5F2FF0017F54A /* InstructionStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +105,7 @@
 		82C488C52CC5F13F0017F54A = {
 			isa = PBXGroup;
 			children = (
+				82C489052CC5F1620017F54A /* modules */,
 				82C488D02CC5F13F0017F54A /* constrains */,
 				82C488EA2CC5F1410017F54A /* constrainsTests */,
 				82C488F42CC5F1410017F54A /* constrainsUITests */,
@@ -103,6 +121,20 @@
 				82C488F12CC5F1410017F54A /* constrainsUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		82C489052CC5F1620017F54A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				82C489062CC5F17A0017F54A /* constrainsInteractor.swift */,
+				82C489072CC5F17A0017F54A /* constrainsPresenter.swift */,
+				82C489082CC5F17A0017F54A /* constrainsProtocol.swift */,
+				82C489092CC5F17A0017F54A /* constrainsRouter.swift */,
+				82C4890A2CC5F17A0017F54A /* constrainsVC.swift */,
+				82C4890B2CC5F17A0017F54A /* constrainsVC.xib */,
+				82C489122CC5F2FF0017F54A /* InstructionStepView.swift */,
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C4890C2CC5F17A0017F54A /* constrainsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C4890D2CC5F17A0017F54A /* constrainsInteractor.swift in Sources */,
+				82C4890E2CC5F17A0017F54A /* constrainsPresenter.swift in Sources */,
+				82C4890F2CC5F17A0017F54A /* constrainsProtocol.swift in Sources */,
+				82C489102CC5F17A0017F54A /* constrainsRouter.swift in Sources */,
+				82C489112CC5F17A0017F54A /* constrainsVC.swift in Sources */,
+				82C489132CC5F2FF0017F54A /* InstructionStepView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +333,6 @@
 				INFOPLIST_FILE = constrains/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +360,6 @@
 				INFOPLIST_FILE = constrains/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
